@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Dashboard</title>
+</head>
+
+<body>
+
+<h1>Sales Dashboard</h1>
+
+<a href="/">Home</a>
+
+<hr>
+
+<h2>Product Sales Distribution</h2>
+
+<img
+src="{{ url_for('static', filename='charts/pie_chart.png') }}"
+width="600"
+alt="Pie Chart">
+
+<hr>
+
+<h2>City Wise Product Sales</h2>
+
+<img
+src="{{ url_for('static', filename='charts/bar_chart.png') }}"
+width="700"
+alt="Bar Chart">
+
+<hr>
+
+<h2>Customer Sales Trend</h2>
+
+<img
+src="{{ url_for('static', filename='charts/line_chart.png') }}"
+width="700"
+alt="Line Chart">
+
+</body>
+</html>

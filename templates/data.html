@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Sales Data</title>
+
+    <style>
+        table{
+            border-collapse: collapse;
+            width: 100%;
+        }
+
+        th, td{
+            border:1px solid black;
+            padding:8px;
+            text-align:center;
+        }
+
+        th{
+            background-color:lightblue;
+        }
+    </style>
+
+</head>
+<body>
+
+<h1>Clean Sales Dataset</h1>
+
+<a href="/">Home</a>
+
+<br><br>
+
+<table>
+
+<tr>
+    <th>Order ID</th>
+    <th>Customer ID</th>
+    <th>Product ID</th>
+    <th>Quantity</th>
+    <th>Name</th>
+    <th>City</th>
+    <th>Product</th>
+    <th>Price</th>
+    <th>Sales</th>
+</tr>
+
+{% for row in records %}
+
+<tr>
+
+{% for item in row %}
+<td>{{ item }}</td>
+{% endfor %}
+
+</tr>
+
+{% endfor %}
+
+</table>
+
+</body>
+</html>
+
